@@ -11,7 +11,7 @@ paises_visitados = ["Portugal", "Spain", "France", "Italy", "Netherlands", "Belg
 paises_visitados_df = world_countries_df[world_countries_df["ADMIN"].isin(paises_visitados)]
 paises_visitados_df["color"] = "green"
 # Países por visitar
-paises_por_visitar = ["Germany", "China", "United Kingdom"]
+paises_por_visitar = ["Germany", "China", "United Kingdom", "Denmark"]
 paises_por_visitar_df = world_countries_df[world_countries_df["ADMIN"].isin(paises_por_visitar)]
 paises_por_visitar_df["color"] = "yellow"
 # Merged Dataframe
