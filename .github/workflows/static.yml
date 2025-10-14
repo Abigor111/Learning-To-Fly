@@ -3,7 +3,7 @@ name: Deploy to pages
 
 on:
   workflow_run:
-    workflows: ["main"]  # nome do primeiro workflow
+    workflows: ["Generate HTML"]
     types:
       - completed
 
