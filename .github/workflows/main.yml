@@ -3,7 +3,10 @@ name: Generate HTML
 on:
   push:
     branches: [ main ]
-
+    paths-ignore:
+      - mapa.html
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,3 +30,10 @@ jobs:
         with:
           name: mapa
           path: mapa.html
+      - name: Commit and push mapa.html
+        run: |
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git add mapa.html
+            git commit -m "Atualizar mapa.html"  || echo "Nada para commitar"
+            git push
