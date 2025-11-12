@@ -27,7 +27,7 @@ jobs:
  
     environment:
       name: github-pages
-      url: "https://Abigor111.github.io/Visited-Countries-Tracker/mapa.html"
+      url: "https://Abigor111.github.io/Learning-to-fly/mapa.html"
       
     steps:
       - name: Checkout
